@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <section>
+    <header>
+    <a href="#"  class ="logo"><img src="logo.png"</a>
+    <ul>
+        <li><a href = "#">Home</a></li>
+        <li><a href  = "#">Menu</a></li>
+        <li><a href = "#">Order</a></li>
+        <li><a href  = "#">About</a></li>
+    </ul>
+    </header>  
+    <div class = "content">
+        <div class ="textBox">
+            <h2>Welcome to SweetKristy<br><span>Way to HEART</span></h2>
+                <p>Some nights the aroma of a baking cake would bring me back to consciousness. Leon would never wake me with the noise of a mixer, everything he did was with ninja stealth, all hand-mixed. It was how he relaxed; some folks soak in a lavender bath, others take a walk in nature or loose themselves in a book. Leon baked cakes. When his work stress was at his worst I was finding homes for cakes every morning. Each one of them was gratefully received and Leon was free to bake more the next evening.</p>
+            <a href="#">Learn More</a>
+        </div>
+    </div> 
+    <div class ="imgBox">
+        <img src ="blog-img1.png" class="SweetKristy">
+    </div>
+    <ul class="thumb">
+        <li><img src="cake1.png" onclick="imgSlider('blog-img1.png')"></li>
+        <li><img src="cake2.png" onclick="imgSlider('blog-img2.png')"></li>
+        <li><img src="cake3.png" onclick="imgSlider('blog-img3.png')"></li>
+    </ul>
+</section>
+<script type = "text/javascript">
+function imgSlider(anything){
+    document.querySelector('.SweetKristy').src = anything;
+ }
+</script>
+</body>
+</html>
